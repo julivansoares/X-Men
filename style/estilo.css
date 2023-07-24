@@ -26,32 +26,110 @@ body{
     justify-content: center;
 }
 
+.containe .logo img{
+  width: 250px;
+}
+
 .sub-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 600px;
-    height: 400px;
+    border: 1px solid rgb(0, 255, 136);
+    width: 1050px;
+    height: 490px;
 }
+
+
+/* seleção de pésonagem */
+
+
+.sub-container{
+    border: 1px solid rgb(21, 0, 255);
+}
+
+.sub-container .pessonagens h1{
+    margin-left: 60px;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(234, 236, 77);
+}
+
+
 
 .pessonagens{
-   /*  border: 1px solid rgb(0, 247, 255); */
-    display: block;
-}
+    /*  border: 1px solid rgb(0, 247, 255); */
+     display: block;
+ }
 
-.pessonagens ul{
-    display: flex;
-    border: 1px solid rgb(236, 240, 236); 
+ .pessonagens div{
+    border-top: 2px solid red;
+    width: 417px;
+    height: 205px;
+    margin-right: 80px;
     
-}
-
-.pessonagens ul li{
-    display: flex;
-    border: 1px solid rgb(255, 0, 34); 
+    background-color: black;
+    
+ }
+.pessonagens ul{
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns: 88px 88px 88px 88px;
+    grid-template-rows: 90px 90px 90px 90px;
+    gap: 20px;
+    width: 350px;
+    height: 205px; 
+    background-color: black;
 }
 
 .pessonagens ul li img{
-    width: 50px;
-    height: 60px;
+    cursor: pointer;
+    width: 94px;
+    height: 100px;
+    opacity: 0.4;
 }
 
+
+.pessonagens ul li img:hover{
+    background-color: aqua;
+    opacity: 1;
+}
+
+
+
+/*descrição pesonagem */
+
+.sub-container .descricao-pesonagen{
+     display: block;
+     justify-content: center;
+    align-items: center;
+    width: 450px;
+    border:1px solid rgb(238, 255, 0);
+    margin-left:15px;
+}
+
+.sub-container .descricao-pesonagen div{
+ border-bottom: 1px solid rgb(212, 209, 209);
+ font-size: 100px;
+}
+
+
+.sub-container .descricao-pesonagen img{
+    margin-left: 30px;
+    width: 370px;
+
+}
+
+.sub-container .descricao-pesonagen h1{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    color: rgb(220, 228, 234);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub-container .descricao-pesonagen p{
+    color: aliceblue;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
