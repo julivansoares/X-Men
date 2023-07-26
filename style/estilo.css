@@ -1,98 +1,88 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 
-body{
+  body {
+     background-image: url("/img/bg-desktop.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin-top: 50px
+}; 
+
+.containe {
+    margin-top: 50px;
+    width: 50px;
+    border: 1px solid rgb(41, 231, 104);
+    
+}
+
+
+.containe .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
-/*     background-image: url("/img/bg-desktop.jpg") */
-
 }
 
-.containe{
-    display:grid;
-    border: 1px solid rgb(248, 253, 250);
-    margin-top: 60px;
-    width: 1500px;
-    height: 700px;
+.containe .logo img {
+    width: 200px;
 }
 
-
-.containe .logo{
+.sub-container {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.containe .logo img{
-  width: 250px;
-}
-
-.sub-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgb(250, 84, 7);
-    width: 1500px;
-    height: 600px;
+    height: 420px;
+    border: 1px solid rgb(41, 231, 104);
 }
 
 
 /* seleção de pésonagem */
 
 
-.sub-container{
-  
-    border: 1px solid rgb(250, 250, 249);
-    width: 1500;
-}
 
-.sub-container .pessonagens h1{
+
+.sub-container .pessonagens h1 {
     margin-left: 70px;
     font-size: 1.4rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(234, 236, 77);
+    color: rgb(197, 195, 223);
 }
 
 
 
- .pessonagens{
+.pessonagens {
     /*  border: 1px solid rgb(0, 247, 255); */
-     display: block;
- }
+    display: block;
+}
 
- .pessonagens div{
-    border-top: 1px solid rgb(241, 238, 238);
-    width: 437px;
-    height: 305px;
-    margin-right: 100px;
+.pessonagens div {
+/*     border: 1px solid rgb(184, 16, 16); */
+    width: 430px;
+    height: 283px;
     background-color: black;
 }
 
-.pessonagens ul{
-    margin-top: 10px;
-    display:grid;
-    grid-template-columns: 100px 88px 88px 88px;
-    grid-template-rows: 150px 90px 90px 90px;
+.pessonagens ul {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 90px 88px 88px 88px;
+    grid-template-rows: 120px 90px 90px 90px;
     gap: 20px;
-    width: 350px;
-    height: 205px; 
-    background-color: black;
+
 }
 
-.pessonagens ul li img{
+.pessonagens ul li img {
     cursor: pointer;
     width: 100px;
-    height: 160px;
+    height: 130px;
     opacity: 0.4;
 }
 
 
-.pessonagens ul li img:hover{
+.pessonagens ul li img:hover {
     opacity: 1;
     transition: 2s;
 }
@@ -101,36 +91,36 @@ body{
 
 /*descrição pesonagem */
 
-.sub-container .descricao-pesonagen{
-     display: block;
-     justify-content: center;
-     align-items: center;
-     width: 450px;
-     margin-left:15px;
+.sub-container .descricao-pesonagen {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    margin-left: 15px;
 }
 
-.sub-container .descricao-pesonagen div{
- border-bottom: 1px solid rgb(241, 238, 238);
- font-size: 100px;
- margin-bottom: 10px;
+.sub-container .descricao-pesonagen div {
+    border-bottom: 1px solid rgb(241, 238, 238);
+    font-size: 100px;
+    margin-bottom: 10px;
 }
 
 
-.sub-container .descricao-pesonagen img{
+.sub-container .descricao-pesonagen img {
     margin-left: 30px;
-    width: 370px;
+    width: 270px;
 }
 
-.sub-container .descricao-pesonagen h1{
+.sub-container .descricao-pesonagen h1 {
     display: flex;
     align-items: center;
-    justify-content:center ;
+    justify-content: center;
     color: rgb(220, 228, 234);
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.sub-container .descricao-pesonagen p{
+.sub-container .descricao-pesonagen p {
     color: aliceblue;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
@@ -138,42 +128,140 @@ body{
 
 
 
-@media(max-width:1024px){
+
+
+/* responsividade */
+
+
+
+@media(max-width:905px) {
+
+    .containe {
+        margin-top: 50px;
+        display: grid;
+        border: 1px solid rgb(16, 221, 98);
+
+    }
 
     
-
-.containe{
-    margin-top: 30px;
+.sub-container {
+    width: 743px;
+    border: 1px solid rgb(112, 16, 221);
 }
 
-  
-.containe .sub-container{
-    display:flex;
-    flex-direction:column-reverse;
-    width: 439px;
-    height: 1000px;
-    margin-left: 50px;
-    background-color: darkgoldenrod;
+    .sub-container .pessonagens h1 {
+        margin-left: 40px;
+        font-size: 0.9rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+    }
+    
+    .pessonagens div {
+        border-top: 2px solid rgb(0, 4, 253);
+        width: 250px;
+        height: 230px;
+        margin-left: 7px;
+    }
 
-   }
+    .pessonagens ul {
+        display: grid;
+        grid-template-columns: 44px 44px 44px 44px;
+        grid-template-rows: 90px 90px 90px 90px;
+        gap: 20px;   
+    }
+    
+    .pessonagens ul li img {
+        cursor: pointer;
+        width: 59px;
+        height: 105px;
+        opacity: 0.3;
+    }
+    
 
-    .pessonagens ul{
-        margin-top: 10px;
-        display:grid;
-        grid-template-columns: 85px 60px 88px 88px;
-        grid-template-rows: 105px 80px 90px 90px;
-        gap: 20px;
-        width: 150px;
-        height: 150px; 
+    .sub-container .descricao-pesonagen div {
+        border: 1px solid rgb(241, 238, 238);
+        margin-bottom: 1px;
+        width: 320px;
+        margin-left: 80px;
+    }
+
+
+
+    .sub-container .descricao-pesonagen p {
+        color: aliceblue;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid red;
+        width: 320px;
+        height: 70px;
+        margin-left: 80px;
+    }
+    
+    .sub-container .descricao-pesonagen img {
+        border: 1px solid red;
+        margin-left: 30px;
+        width: 240px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media(max-width:905px) {
+
+    .containe .sub-container {
+        border: 1px solid rgb(218, 27, 27);
+        display: flex;
+        flex-direction: column-reverse;
+        width: 439px;
+        height: 700px;
+        margin-left: 05px;
+    }
+
+    .pessonagens div {
+        border-top: 1px solid rgb(175, 171, 171);
+        width: 340px;
+        height: 210px;
         background-color: black;
     }
 
-    .pessonagens ul li img{
+    .pessonagens ul {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 65px 65px 65px 88px;
+        grid-template-rows: 80px 80px 90px 90px;
+        gap: 20px;
+        width: 150px;
+        height: 100px;
+        background-color: black;
+    }
+
+   
+
+    .pessonagens ul li img {
         cursor: pointer;
-        width: 100px;
-        height: 120px;
+        width: 80px;
+        height: 95px;
         opacity: 0.4;
     }
-    
 
-}
+
+} */
