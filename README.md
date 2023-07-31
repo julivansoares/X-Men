@@ -2,4 +2,4 @@
 
 
 
-#https://x-men-omega.vercel.app/
+link: https://x-men-omega.vercel.app/
