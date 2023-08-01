@@ -90,9 +90,9 @@ const pesonagens=[
         <div class="descricao-pesonagen">
             <div>
             <img src="${pesonagens[0].pesonagen}"> 
-            <h1>${pesonagens[3].nome}</h1>
+            <h1>${pesonagens[0].nome}</h1>
             </div>
-            <p>${pesonagens[3].poder}</p>
+            <p>${pesonagens[0].poder}</p>
          </div>
        ` 
      descricaoPesonagen.addEventListener('mouseover',(e)=>{
